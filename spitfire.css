@@ -1,0 +1,47 @@
+#header {
+    text-align: center;
+    background-color: cyan;
+    width: 105%;
+    height: 92px;
+    margin-top: -21px;
+    margin-left: -10px;
+    margin-right: 0px;
+    z-index: 1;
+    }
+#leftbar {
+    background-color: black;
+    position: fixed;
+    width: 178px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+#mainList {
+    position: absolute;
+    left: 178px;
+    top: 92px;
+    right: 0;
+    bottom: 0;
+    }
+h2 {
+    text-align: center;
+    }
+h3 {
+    margin-bottom: 0;
+    }
+body {
+    background-color: orange;
+    }
+.alpha {
+    background-color: cyan;
+    margin-right: 178px;
+    }
+.beta {
+    background-color: grey;
+    margin-right: 178px;
+    }
+.gamma {
+    background-color: white;
+    margin-right: 178px;
+    }
