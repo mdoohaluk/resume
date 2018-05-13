@@ -16,7 +16,7 @@
         function switchCSS (newCSS) {
             var oldCSS = document.getElementById("stylesheet");
             oldCSS.href= newCSS;
-            return alert(newCSS);
+            return 1;
         }
     </script>
 
@@ -30,7 +30,7 @@
 
     <div id="leftbar">
         <h2>Stylesheets</h2>
-        <button value="Spitfire" type="button" onclick="alert('Spitfire!')">
+        <button value="Spitfire" type="button" onclick="switchCSS('spitfire.css')">
         <button value="Chessboard" type="button" onclick="switchCSS('chessboard.css')">
     </div>
 
