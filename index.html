@@ -10,17 +10,13 @@
     <meta name="author" content="Michael Doohaluk">
     <meta name="desription" content="The goal of this website is to display and help develop my coding abilities.">
 
-    <link rel="stylesheet" href="spitfire.css">
+    <link rel="stylesheet" id="stylesheet" href="spitfire.css">
     
     <script type="text/javascript">
-        function switchCSS(cssFile, cssIndex) {
-        var x = document.getElementsByTagName("link").item(cssIndex);
-        var y = document.createElement("link");
-        y.setAttribute("rel", "stylesheet");
-        y.setAttribute("type", "text/css");
-        y.setAttribute("href", cssFile);
-        document.getElementsByTagName("head").item(0).replaceChild(y, x);
-}
+        function switchCSS (newCSS) {
+            var oldCSS = document.getElementById("stylesheet");
+            document.getElementById("stylesheet").replaceChild(newCSS, oldCSS);
+        }
     </script>
 
 </head>
