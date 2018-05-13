@@ -15,7 +15,7 @@
     <script type="text/javascript">
         function switchCSS (newCSS) {
             var oldCSS = document.getElementById("stylesheet");
-            document.getElementById("stylesheet").replaceChild(newCSS, oldCSS);
+            oldCSS.setAttribute("href", newCSS);
         }
     </script>
 
