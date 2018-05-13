@@ -21,42 +21,51 @@
     </div>
 
     <div id="leftbar">
-        
+        <h2>Stylesheets</h2>
+        <button type="button" onclick="switchCSS(spitfire.css)">Spitfire</button>
+        <button type="button" onclick="switchCSS(chessboard.css)">Chessboard</button>
     </div>
 
     <div id="mainList">
-        <h2>List of Projects</h3>
+        <h2>List of Projects</h2>
         <dl>
-    	    <dt class="alpha"><h3><a href="lotus.html">Lotus</a> <a href="lotus-code.html">(Code)</a></h3></dt>
+    	    <div class="lotus"><dt class="alpha"><h3><a href="lotus.html">Lotus</a> <a href="lotus-code.html">(Code)</a></h3></dt>
                  <dd class="alpha">Lotus is a board game developed using javascript. Two players compete by moving
                  their pieces towards a mutual goal. Pieces pile up in stacks on the game board and the distance
-                 they can move is dictated by the height of the stack they currently occupy.</dd><br>
-    	    <dt class="beta"><h3>Bishkies and Boshkies</h3></dt>
+                 they can move is dictated by the height of the stack they currently occupy.</dd><br></div>
+    	    <div class="bnb"><dt class="beta"><h3>Bishkies and Boshkies</h3></dt>
                  <dd class="beta">Bishkies and boskies is a placeholder element. I will replace this later with a
-                 real project or maybe turn bishkies and boskies into some kind of game.</dd><br>
-    	    <dt class="gamma"><h3>Third Thing</h3></dt>
+                 real project or maybe turn bishkies and boskies into some kind of game.</dd><br></div>
+    	    <div class="thirdthing"><dt class="gamma"><h3>Third Thing</h3></dt>
                  <dd class="gamma">Third thing is another placeholder element. This one will be replaced as I cannot
-                 think of something funny or worthwhile that would adequately fit the title of third thing</dd><br>
-            <dt class="alpha"><h3>Dungeoner</h3></dt>
+                 think of something funny or worthwhile that would adequately fit the title of third thing</dd><br></div>
+            <div class="dungeoner"><dt class="alpha"><h3>Dungeoner</h3></dt>
                  <dd class="alpha">Dungeoner is going to be a basic text-based dungeon crawler ideally made with
                  something other than javascript, but may be made with javascript if that ends up being the best way
-                 to do it.</dd><br>
-            <dt class="beta"><h3>Michael Dew</h3></dt>
+                 to do it.</dd><br></div>
+            <div class="michaeldew"><dt class="beta"><h3>Michael Dew</h3></dt>
                  <dd class="beta">The Michael Dew webpage is a mark-up of a website for a fiction energy drink
-                 called Michael Dew.</dd><br>
-            <dt class="gamma"><h3>Dungeoner II</h3></dt>
+                 called Michael Dew.</dd><br></div>
+            <div class="dungeonertwo"><dt class="gamma"><h3>Dungeoner II</h3></dt>
                 <dd class="gamma">The sequel to Dungeoner, possibly. This will be a platformer that may have some
                 stylistic similarities to dungeoner, but possibly not. It will likely be a single screen puzzler
-                where you may have to collect some trinkets of some sort to advance.</dd><br>
-            <dt class="alpha"><h3>Tetrocity</h3></dt>
+                where you may have to collect some trinkets of some sort to advance.</dd><br></div>
+            <div class="tetris"><dt class="alpha"><h3>Tetrocity</h3></dt>
                 <dd class="alpha">A tetris clone with some added elements, likely five block pieces and some other
-                surprises.</dd><br>
-            <dt class="beta"><h3>Dungeoner III: The Dungeoning</h3></dt>
-                <dd class="beta">The third chapter in the Duneoner trilogy! Realistically at this point I'm just
+                surprises.</dd><br></div>
+            <div class="dungeonerthree"><dt class="beta"><h3>Dungeoner III: The Dungeoning</h3></dt>
+                <dd class="beta">The third chapter in the Duneoner trilogy! Realistically, at this point I'm just
                 trying to make sure I have a good number of elements on the page so I can test the html and css
-                layouts properly but who knows maybe this will actually become a thing.</dd> 
+                layouts properly but who knows maybe this will actually become a thing.</dd></div> 
         </dl>
     </div>
+
+    <script type="text/javascript">
+        function switchCSS(newCSS) {
+            var x = Document.querySelector(href);
+            x.parentNode.replaceChild(newCSS, x);
+        }
+    </script>
 
 </body>
 
