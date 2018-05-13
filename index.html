@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="spitfire.css">
     
     <script type="text/javascript">
-        function switchCSS(newCSS) {
-            var x = Document.querySelector(link);
-            link.href = newCSS;
-        }
+        function changeCSS(cssFile, cssIndex) {
+        var x = document.getElementsByTagName("link").item(cssIndex);
+        var y = document.createElement("link");
+        y.setAttribute("rel", "stylesheet");
+        y.setAttribute("type", "text/css");
+        y.setAttribute("href", cssFile);
+        document.getElementsByTagName("head").item(0).replaceChild(y, x);
+}
     </script>
 
 </head>
