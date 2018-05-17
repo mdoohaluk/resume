@@ -1,0 +1,109 @@
+#leftbar {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #ad2624;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    }
+.lotus {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #919194;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    margin-top: 100px;
+    margin-left: 200px;
+    }
+.bnb {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #ad2624;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    margin-top: -110px;
+    margin-left: 400px;
+    }
+.thirdthing {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #919194;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    margin-top: -110px;
+    margin-left: 600px;
+    }
+.dungeoner {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #ad2624;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    margin-top: -110px;
+    margin-left: 800px;
+    }
+.michaeldew {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #919194;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    margin-top: -110px;
+    margin-left: 600px;
+    }
+.dungeonertwo {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #ad2624;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    margin-top: -110px;
+    margin-left: 400px;
+    }
+.tetris {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #919194;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    margin-top: -110px;
+    margin-left: 200px;
+    }
+.dungeonerthree {
+    width: 0;
+    height: 0;
+    border-left: 400px solid #ad2624;
+    border-top: 240px solid transparent;
+    border-bottom: 240px solid transparent;
+    margin-top: -110px;
+    }
+#buttoncontainer {
+    margin-left: -375px;
+    width: 200px;
+    }
+
+h1 {
+    color: #919194;
+    text-align: center;
+    }
+#buttontitle {
+    margin-left: -375px;
+    margin-top: -100px;
+    }
+#projecttitle {
+    margin-left: 600px;
+    margin-top: -250px;
+    font-size: 32px;
+    color: #ad2624;
+    }
+h3 {
+    margin-left: -375px;
+    margin-top:  -120px;
+    width: 175px;
+    }
+dd {
+    margin-left: -375px;
+    width: 200px;
+    }
+body {
+    background: black;
+    }
