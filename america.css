@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    }
+#header {
+    width: 33%;
+    height: 250px;
+    background-color: #002868;
+    color: white;
+    }
+#projecttitle {
+    margin-top: -100px;
+    color: white;
+    }
+.lotus {
+    position: fixed;
+    top: 250px;
+    left: 0;
+    bottom: 0;
+    right: 89%;
+    background-color: #BF0A30;
+    }
+.lotustitle {
+    background-color: #FAEBD7;
+    }
+.lotusdescription {
+    background-color: #FAEBD7;
+    }
+.bnb {
+    position: fixed;
+    top: 250px;
+    left: 11%;
+    bottom: 0;
+    right: 78%;
+    background-color: #FAEBD7;
+    }
+.bnbtitle {
+    background-color: #BF0A30;
+    }
+.bnbdescription {
+    background-color: #BF0A30;
+    }
+.thirdthing {
+    position: fixed;
+    top: 250px;
+    left: 22%;
+    bottom: 0;
+    right: 67%;
+    background-color: #BF0A30;
+    }
+.thirdthingtitle {
+    background-color: #FAEBD7;
+    }
+.thirdthingdescription {
+    background-color: #FAEBD7;
+    }
+#leftbar {
+    position: fixed;
+    top: 0;
+    left: 33%;
+    bottom: 0;
+    right: 56%;
+    background-color: #FAEBD7;
+    }
+#buttontitle {
+    background-color: #BF0A30;
+    }
+#buttoncontainer {
+    background-color: #BF0A30;
+    text-align: center;
+    }
+button {
+    display: block;
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 5px;
+}
+.dungeoner {
+    position: fixed;
+    top: 0;
+    left: 44%;
+    bottom: 0;
+    right: 45%;
+    background-color: #BF0A30;
+    }
+.dungeonertitle {
+    background-color: #FAEBD7;
+    }
+.dungeonerdescription {
+    background-color: #FAEBD7;
+    }
+.michaeldew {
+    position: fixed;
+    top: 0;
+    left: 55%;
+    bottom: 0;
+    right: 34%;
+    background-color: #FAEBD7;
+    }
+.michaeldewtitle {
+    background-color: #BF0A30;
+    }
+.michaeldewdescription {
+    background-color: #BF0A30;
+    }
+.dungeonertwo {
+    position: fixed;
+    top: 0;
+    left: 66%;
+    bottom: 0;
+    right: 23%;
+    background-color: #BF0A30;
+    }
+.dungeonertwotitle {
+    background-color: #FAEBD7;
+    }
+.dungeonertwodescription {
+    background-color: #FAEBD7;
+    }
+.tetris {
+    position: fixed;
+    top: 0;
+    left: 77%;
+    bottom: 0;
+    right: 12%;
+    background-color: #FAEBD7;
+    }
+.tetristitle {
+    background-color: #BF0A30;
+    }
+.tetrisdescription {
+    background-color: #BF0A30;
+    }
+.dungeonerthree {
+    position: fixed;
+    top: 0;
+    left: 88%;
+    bottom: 0;
+    right: 0;
+    background-color: #BF0A30;
+    }
+.dungeonerthreetitle {
+    background-color: #FAEBD7;
+    }
+.dungeonerthreedescription {
+    background-color: #FAEBD7;
+    }
