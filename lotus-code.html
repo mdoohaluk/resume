@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lotus Code</title>
+</head>
+
+<body>
+
+    <div>This is the code for the game lotus</div>
+    
+    <pre><code>
+function getTopColor(x){
+    if (x.length == 0) {
+        return "grey";
+    } else {
+        return (x[x.length-1]);
+    }
+}
+
+function resetGame() {
+    updateSpaces();
+}
+
+var b0 = "black";
+var b1 = "black";
+var b2 = "black";
+var b3 = "black";
+var b4 = "black";
+var b5 = "black";
+var b6 = "black";
+var b7 = "black";
+var b8 = "black";
+var b9 = "black";
+var r0 = "red";
+var r1 = "red";
+var r2 = "red";
+var r3 = "red";
+var r4 = "red";
+var r5 = "red";
+var r6 = "red";
+var r7 = "red";
+var r8 = "red";
+var r9 = "red";
+
+var bs1 = [b0, b1, b2, b3];
+var bs2 = [b4, b5, b6];
+var bs3 = [b7, b8];
+var bs4 = [b9];
+var rs1 = [r0, r1, r2, r3];
+var rs2 = [r4, r5, r6];
+var rs3 = [r7, r8];
+var rs4 = [r9];
+var blackStart = [bs1, bs2, bs3, bs4];
+var redStart = [rs1, rs2, rs3, rs4];
+
+var l1 = [];
+var l2 = [];
+var l3 = [];
+var l4 = [];
+var r1 = [];
+var r2 = [];
+var r3 = [];
+var r4 = [];
+var leftTrack = [l1, l2, l3, l4];
+var rightTrack = [r1, r2, r3, r4];
+
+var c0 = [];
+var c1 = [];
+var c2 = [];
+var c3 = [];
+var c4 = [];
+var c5 = [];
+var c6 = [];
+var c7 = [];
+var c8 = [];
+var c9 = [];
+var centerTrack = [c0, c1, c2, c3, c4, c5, c6, c7, c8, c9];
+
+var redCount = 0;
+var blackCount = 0;
+var currentPlayer = "red";
+
+
+function updateSpaces() {
+    var x1 = document.getElementById("red1");
+    x1.innerHTML = rs1.length;
+    x1.style.backgroundColor = getTopColor(rs1);
+    var x2 = document.getElementById("red2");
+    x2.innerHTML = rs2.length;
+    x2.style.backgroundColor = getTopColor(rs2);
+    var x3 = document.getElementById("red3");
+    x3.innerHTML = rs3.length;
+    x3.style.backgroundColor = getTopColor(rs3);
+    var x4 = document.getElementById("red4");
+    x4.innerHTML = rs4.length;
+    x4.style.backgroundColor = getTopColor(rs4);
+    var x5 = document.getElementById("black1");
+    x5.innerHTML = bs1.length;
+    x5.style.backgroundColor = getTopColor(bs1);
+    var x6 = document.getElementById("black2");
+    x6.innerHTML = bs2.length;
+    x6.style.backgroundColor = getTopColor(bs2);
+    var x7 = document.getElementById("black3");
+    x7.innerHTML = bs3.length;
+    x7.style.backgroundColor = getTopColor(bs3);
+    var x8 = document.getElementById("black4");
+    x8.innerHTML = bs4.length;
+    x8.style.backgroundColor = getTopColor(bs4);
+
+    var y1 = document.getElementById("left1");
+    y1.innerHTML = l1.length;
+    y1.style.backgroundColor = getTopColor(l1);
+    var y2 = document.getElementById("left2");
+    y2.innerHTML = l2.length;
+    y2.style.backgroundColor = getTopColor(l2);
+    var y3 = document.getElementById("left3");
+    y3.innerHTML = l3.length;
+    y3.style.backgroundColor = getTopColor(l3);
+    var y4 = document.getElementById("left4");
+    y4.innerHTML = l4.length;
+    y4.style.backgroundColor = getTopColor(l4);
+    var y5 = document.getElementById("right1");
+    y5.innerHTML = r1.length;
+    y5.style.backgroundColor = getTopColor(r1);
+    var y6 = document.getElementById("right2");
+    y6.innerHTML = r2.length;
+    y6.style.backgroundColor = getTopColor(r2);
+    var y7 = document.getElementById("right3");
+    y7.innerHTML = r3.length;
+    y7.style.backgroundColor = getTopColor(r3);
+    var y8 = document.getElementById("right4");
+    y8.innerHTML = r4.length;
+    y8.style.backgroundColor = getTopColor(r4);
+
+    var z0 = document.getElementById("center0");
+    z0.innerHTML = c0.length;
+    z0.style.backgroundColor = getTopColor(c0);
+    var z1 = document.getElementById("center1");
+    z1.innerHTML = c1.length;
+    z1.style.backgroundColor = getTopColor(c1);
+    var z2 = document.getElementById("center2");
+    z2.innerHTML = c2.length;
+    z2.style.backgroundColor = getTopColor(c2);
+    var z3 = document.getElementById("center3");
+    z3.innerHTML = c3.length;
+    z3.style.backgroundColor = getTopColor(c3);
+    var z4 = document.getElementById("center4");
+    z4.innerHTML = c4.length;
+    z4.style.backgroundColor = getTopColor(c4);
+    var z5 = document.getElementById("center5");
+    z5.innerHTML = c5.length;
+    z5.style.backgroundColor = getTopColor(c5);
+    var z6 = document.getElementById("center6");
+    z6.innerHTML = c6.length;
+    z6.style.backgroundColor = getTopColor(c6);
+    var z7 = document.getElementById("center7");
+    z7.innerHTML = c7.length;
+    z7.style.backgroundColor = getTopColor(c7);
+    var z8 = document.getElementById("center8");
+    z8.innerHTML = c8.length;
+    z8.style.backgroundColor = getTopColor(c8);
+    var z9 = document.getElementById("center9");
+    z9.innerHTML = c9.length;
+    z9.style.backgroundColor = getTopColor(c9);
+}
+
+function switchPlayers () {
+    if (currentPlayer=="red") {
+            currentPlayer = "black";
+    } else if (currentPlayer=="black") {
+            currentPlayer = "red";
+    }
+}
+
+function move(s) {
+    if (getTopColor(s) == "grey") {
+        alert("There are no pieces in that stack!");
+    } else if (getTopColor(s) != currentPlayer) {
+        alert("You can't move another player's piece");
+    } else if (redStart.includes(s)||blackStart.includes(s)) {
+        var distance = s.length;
+        var p = s.pop();
+        var decision = confirm("Press OK to choose the left track or press cancel to choose the right track");        
+        if (decision) {
+            leftTrack[distance-1].push(p);
+            switchPlayers();
+        } else {
+            rightTrack[distance-1].push(p);
+            switchPlayers();
+        }
+    } else if (leftTrack.includes(s)) {
+        var distance = s.length;
+        var p = s.pop();
+        if ((leftTrack.indexOf(s) + distance) <= 3) {
+                leftTrack[(leftTrack.indexOf(s) + distance)].push(p);
+                switchPlayers();
+        }  else {
+                distance = distance - (3-leftTrack.indexOf(s));
+                centerTrack[distance-1].push(p);
+                switchPlayers();
+        }
+    } else if (rightTrack.includes(s)){
+        var distance = s.length;
+        var p = s.pop();
+        if ((rightTrack.indexOf(s) + distance) <= 3) {
+                rightTrack[(rightTrack.indexOf(s) + distance)].push(p);
+                switchPlayers();
+        }  else {
+                distance = distance - (3-rightTrack.indexOf(s));
+                centerTrack[distance-1].push(p);
+                switchPlayers();
+        }
+    } else if (centerTrack.includes(s)) {
+        var distance = s.length;
+        var p = s.pop();
+        if ((centerTrack.indexOf(s) + distance) <= 9) {
+            centerTrack[(centerTrack.indexOf(s) + distance)].push(p);
+            switchPlayers();
+        } else {
+            if (p == "red") {
+                redCount++;
+                if (redCount == 10) {
+                    alert("Red Player Wins!")
+                    resetGame();
+                }
+            } else if (p =="black") {
+                blackCount++;
+                if (blackCount == 10) {
+                    alert("Black Player Wins!")
+                    resetGame();
+                }
+            }
+        }
+    }
+
+    updateSpaces();
+    
+}
+
+</code></pre>
+
+</body>
+
+</html>
